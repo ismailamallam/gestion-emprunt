@@ -2,7 +2,7 @@ class GestionEpargne: #Ceci est une classe
 
         #Constructeur
 
-        def __init__(self,mt = 0.0,solde = 0.0):
+    def __init__(self,mt = 0.0,solde = 0.0):
         self._mt = m
         self._solde = solde
         
@@ -33,12 +33,15 @@ class GestionEpargne: #Ceci est une classe
 
             # appel de la 2e methode pour l'affichage du nouveau solde
         self.infoSolde()
-
-     def taux(self, taux):
-	self.taux = mt * 5 / 100
+    def taux(self, taux):
+        self.taux = mt * 5 / 100
      
-     def  Versement (self, versement)
-	self.versement += taux
-	print("vous devriez nous verser {} FCFA par Mois ".format(self.versement))
-     
-	
+    def Versement(self):
+        self.vers += taux
+        print("vous devriez nous verser {} FCFA par Mois ".format(self.versement))
+    def confirm_retrait(self, montant_banque):
+        montant_banque =50000
+        if (emprunt > montant_banque):
+            print("desole nous n avons pas ce montant")
+        else:
+            print("okay")
